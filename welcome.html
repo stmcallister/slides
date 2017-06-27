@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body {
+        font-family: 'Droid Serif';
+        color: white;
+      }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      h1 {
+        color: #990000;
+      }
+      .title-header {
+        font-size: 1.5em;
+      }
+      div.remark-slide h1 {
+        font-size: 2em;
+      }
+      div.remark-slide-content {
+        background-color: black;
+        font-size: 2em;
+        padding: 1em 3em;
+      }
+      .remark-code, .remark-inline-code {
+        font-family: 'Ubuntu Mono';
+      }
+      .sponsors {
+        color: gray;
+      }
+      .sponsor-link {
+        color: #aaaaaa;
+        font-size: 1.2em;
+        align-content: bottom;
+      }
+      .logo img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+# .title-header[Seattle Node.js Meetup]
+<hr style="margin-top: -20px" />
+## ECMAScript Modules: Fury Road<br />_John-David Dalton - `@jdalton`_
+
+.sponsors[`@seattlenode` | `@formidablelabs` | `@cdkglobal`]
+
+---
+
+class: center, middle
+
+.logo[![Formidable](./images/formidable-white.svg)]
+
+.sponsor-link[`formidable.com`]
+
+---
+
+class: center, middle
+
+.logo[![Formidable](./images/seattlejs-conf-white.png)]
+
+.sponsor-link[`seattlejs.com`]
+
+---
+
+# Meetup
+
+- August Meetup
+- ... and after. _Come speak!_
+
+    </textarea>
+    <!-- Remark -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remark/0.14.0/remark.min.js"></script>
+    <script>
+      remark.create();
+    </script>
+    <!-- Offline -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/UpUp/0.3.0/upup.min.js"></script>
+    <script>
+      UpUp.start({
+        "content-url": "welcome.html",
+        "assets": [
+          "welcome.html",
+          "images/formidable-white.svg",
+          "images/seattlejs-conf-white.png",
+          "https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz",
+          "https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic",
+          "https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic",
+          "https://cdnjs.cloudflare.com/ajax/libs/remark/0.14.0/remark.min.js",
+          "https://cdnjs.cloudflare.com/ajax/libs/UpUp/0.3.0/upup.min.js",
+          "https://fonts.gstatic.com/s/yanonekaffeesatz/v8/YDAoLskQQ5MOAgvHUQCcLWjF_m7mVnhXExjNED3rUtY.woff2",
+          "https://fonts.gstatic.com/s/droidserif/v6/0AKsP294HTD-nvJgucYTaIgp9Q8gbYrhqGlRav_IXfk.woff2"
+        ]
+      });
+    </script>
+  </body>
+</html>

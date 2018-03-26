@@ -6,20 +6,23 @@
     <title>Seattle Node.js Meetup</title>
     <link href="https://fonts.googleapis.com/css?family=Lobster+Two:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet" type="text/css">
-    <link href="https://unpkg.com/prismjs@1/themes/prism-tomorrow.css" rel="stylesheet" type="text/css">
     <link href="https://unpkg.com/normalize.css@7/normalize.css" rel="stylesheet" type="text/css">
-    <link href="https://unpkg.com/spectacle/lib/themes/default/index.css" rel="stylesheet" type="text/css">
+    <style>
+      a, a:link, a:focus, a:visited, a:active, a:hover  {
+        text-decoration: none;
+        color: #000;
+      }
+    </style>
 </head>
 <body>
     <div id="root"></div>
-    <script src="https://unpkg.com/prismjs@1/prism.js"></script>
-    <script src="https://unpkg.com/prismjs@1/components/prism-jsx.min.js"></script>
     <script src="https://unpkg.com/prop-types@15/prop-types.js"></script>
-    <script src="https://unpkg.com/react@15/dist/react.js"></script>
-    <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
-    <script src="https://unpkg.com/babel-standalone@6/babel.js"></script>
-    <script src="https://unpkg.com/spectacle@2/dist/spectacle.js"></script>
-    <script src="https://unpkg.com/spectacle@2/lib/one-page.js"></script>
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.js"></script>
+    <script src="https://unpkg.com/spectacle@^4/dist/spectacle.js"></script>
+    <script src="https://unpkg.com/spectacle@^4/lib/one-page.js"></script>
+    <script src="https://unpkg.com/victory@^0.25/dist/victory.js"></script>
     <script type="text/spectacle">
       () => {
         // Customize the default theme.
@@ -36,15 +39,22 @@
             transition={["zoom", "slide"]}
             transitionDuration={500}
           >
-            <Slide bgColor="primary">
+            <Slide bgColor="secondary">
               <Heading size={1} fit caps>
                 Seattle Node.js
               </Heading>
-              <Heading size={1} lineHeight={1.5} fit caps textColor="black">
-                All About Auth + JWTs
+              <Heading size={1} fit caps textColor="primary">
+                Serverless apps +
               </Heading>
-              <Text>Randall Degges - <Code>@rdegges</Code></Text>
-              <Text>Ado Kukic - <Code>@kukicado</Code></Text>
+              <Heading size={1} lineHeight={1.5} fit caps textColor="primary">
+                GraphQL w/ AWS AppSync
+              </Heading>
+              <Text size={1} textColor="lightGray">
+                Rohan Deshpande - <Code textColor="lightGray">@appwiz</Code>
+              </Text>
+              <Text textColor="lightGray">
+                Richard Threlkeld - <Code textColor="lightGray">@undef_obj</Code>
+              </Text>
               <div style={{paddingTop: "1em"}}>
                 <Link href="https://twitter.com/seattlenode">
                   <Code textColor="white">@seattlenode</Code>
@@ -55,10 +65,10 @@
                 </Link>
               </div>
             </Slide>
-            <Slide>
+            <Slide bgColor="secondary">
               <Image src={"https://cdn.rawgit.com/seanode/welcome/master/images/formidable-white.svg"} width={"100%"} />
             </Slide>
-            <Slide bgColor={"#222"}>
+            <Slide bgColor="secondary">
               <Heading fit caps>Your meetup needs you!</Heading>
               <hr />
               <Appear fid="1">

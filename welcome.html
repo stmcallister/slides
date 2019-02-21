@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width initial-scale=1 user-scalable=no" />
-    <title>Seattle Node.js Meetup</title>
+    <title>SeattleJS February Meetup</title>
     <link href="https://fonts.googleapis.com/css?family=Lobster+Two:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet" type="text/css">
     <link href="https://unpkg.com/normalize.css@7/normalize.css" rel="stylesheet" type="text/css">
@@ -36,51 +36,73 @@
           <Deck
             theme={theme}
             progress={"none"}
-            transition={["zoom", "slide"]}
+            transition={["slide"]}
             transitionDuration={500}
           >
             <Slide bgColor="secondary">
               <Heading fit caps>
-                Seattle Node.js
+                SeattleJS
               </Heading>
               <Heading fit caps textColor="primary">
-                Observing, monitoring,
+                February Meetup
+              </Heading>
+              <Text textAlign="left" textColor="tertiary">Bathroom codes: "Womens" 8025* | "Mens" 8125*</Text>
+              <Text textAlign="left" textColor="tertiary">WiFi: CodeFellows | learnmorefaster</Text>
+              <footer style={{paddingTop: "1em"}}>
+                <Link href="https://twitter.com/seattlejs">
+                  <Code textColor="white">@seattlejs</Code>
+                </Link>                
+              </footer>
+            </Slide>
+
+            <Slide bgColor="secondary">
+              <Heading fit caps textColor="primary">
+                A Big Thank You
               </Heading>
               <Heading fit caps textColor="primary">
-                &amp; profiling Node.js
+                to our host sponsor
               </Heading>
-              <Text textColor="lightGray">
-                James Snell - <Code textColor="lightGray">@jasnell</Code>
-              </Text>
-              <div style={{paddingTop: "1em"}}>
-                <Link href="https://twitter.com/seattlenode">
-                  <Code textColor="white">@seattlenode</Code>
-                </Link>
-                <S type={""} textColor={"white"} textSize={"1.6em"}>|</S>
-                <Link href="https://twitter.com/formidablelabs">
-                  <Code textColor="white">@formidablelabs</Code>
-                </Link>
-              </div>
+              <Image src="https://images.ctfassets.net/qjy3jg1udcmq/1MN5F84EVi0SaAieSkqY6S/46d632aa1811432f9c0a92600a1a5ee6/cf-logo-horizontal-2-color-white.png" alt="Code Fellows" width={"100%"}  />
+              <Link href="https://twitter.com/codefellows">
+                <Code textColor="lightGray">@codefellows</Code>
+              </Link>
             </Slide>
+
             <Slide bgColor="secondary">
-              <Image src={"https://rawcdn.githack.com/seanode/welcome/master/images/formidable-white.svg"} width={"100%"} />
+              <Heading fit caps textColor="primary">Learn to code.</Heading>
+              <Heading fit lineHeight={2}>
+                <Link href="https://www.codefellows.org/how-to-apply/">
+                  <Code textColor="white">codefellows.org/how-to-apply/</Code>
+                </Link>
+              </Heading>
             </Slide>
+
             <Slide bgColor="secondary">
-              <Heading fit caps>We're hiring.</Heading>
+              <Heading fit caps textColor="primary">
+                Thank You to our
+              </Heading>
+              <Heading fit caps textColor="primary">
+                food &amp; drink sponsor
+              </Heading>
+              <Image
+                style="margin: -4em 0"
+                src={"https://rawcdn.githack.com/seanode/welcome/master/images/formidable-white.svg"}
+                width={"100%"}
+                alt="Formidable" />
+              <Link href="https://twitter.com/formidablelabs">
+                <Code textColor="lightGray">@formidablelabs</Code>
+              </Link>
+            </Slide>
+            
+            <Slide bgColor="secondary">
+              <Heading fit caps textColor="primary">Formidable is hiring.</Heading>
               <Heading fit lineHeight={2}>
                 <Link href="https://formidable.com/careers/">
                   <Code textColor="white">formidable.com/careers</Code>
                 </Link>
               </Heading>
             </Slide>
-            <Slide bgColor="secondary">
-              <Image src={" https://2018.cascadiajs.com/static/cascadiajs-background.961b4adc.png"} width={"100%"} />
-              <Link href="https://2018.cascadiajs.com/call-for-presenters/">
-                <Code textColor="white">
-                  2018.cascadiajs.com/call-for-presenters
-                </Code>
-              </Link>
-            </Slide>
+
             <Slide bgColor="secondary">
               <Heading fit caps>Your meetup needs you!</Heading>
               <hr />
@@ -90,16 +112,110 @@
                 </Heading>
               </Appear>
               <Appear fid="2">
-                <Heading size={1} caps textColor="tertiary">
-                  Spaces
+                <Heading size={1} caps textColor="primary">
+                  Organizers
                 </Heading>
               </Appear>
               <Appear fid="3">
-                <Heading size={1} caps textColor="primary">
-                  Sponsors
+                <Heading size={1} caps textColor="tertiary">
+                  Hosts & Sponsors
                 </Heading>
               </Appear>
+              <Appear fid="4">
+                <Heading size={1} caps textColor="tertiary">
+                  Community
+                </Heading>
+              </Appear>
+              <footer style={{paddingTop: "1em"}}>
+                <Link href="https://twitter.com/seattlejs">
+                  <Code textColor="white">@seattlejs</Code>
+                </Link>                
+              </footer>
             </Slide>
+
+            <Slide bgColor="secondary">
+              <Heading fit caps>
+                Talks
+              </Heading>
+              <footer style={{paddingTop: "1em"}}>
+                <Link href="https://twitter.com/seattlejs">
+                  <Code textColor="white">@seattlejs</Code>
+                </Link>                
+              </footer>
+            </Slide>
+
+            <Slide bgColor="secondary">
+              <Heading fit caps>
+                Amber Hoak
+              </Heading>
+              <Heading fit caps textColor="primary">
+                Designing Data-Driven
+              </Heading>
+              <Heading fit caps textColor="primary">
+              Visualizations using D3.js
+              </Heading>
+              <Text textColor="lightGray">
+                <Code textColor="lightGray">@ahoak</Code>
+              </Text>
+            </Slide>
+
+            <Slide bgColor="secondary">
+              <Heading fit caps>
+                Doug Mahugh & Kim Brandl
+              </Heading>
+              <Heading fit caps textColor="primary">
+                Extend Office 365 with
+              </Heading>
+              <Heading fit caps textColor="primary">
+                the Office JavaScript APIs
+              </Heading>
+              <Text textColor="lightGray">
+                <Code textColor="lightGray">@dmahugh</Code> |
+                <Code textColor="lightGray">@kbrandl22</Code>
+              </Text>
+            </Slide>
+
+            <Slide bgColor="secondary">
+              <Heading fit caps textColor="primary">
+                Sponsors ❤
+              </Heading>
+              <Image
+                 style="margin-top: 2em"
+                src="https://images.ctfassets.net/qjy3jg1udcmq/1MN5F84EVi0SaAieSkqY6S/46d632aa1811432f9c0a92600a1a5ee6/cf-logo-horizontal-2-color-white.png" alt="Code Fellows" width={"100%"}  />
+              <Link href="https://twitter.com/codefellows">
+                <Code textColor="lightGray">@codefellows</Code>
+              </Link>
+              <Image
+                style="margin: -4em 0"
+                src={"https://rawcdn.githack.com/seanode/welcome/master/images/formidable-white.svg"}
+                width={"100%"}
+                alt="Formidable" />
+              <Link href="https://twitter.com/formidablelabs">
+                <Code textColor="lightGray">@formidablelabs</Code>
+              </Link>
+            </Slide>
+
+            <Slide bgColor="secondary">
+              <Heading fit caps>Follow us</Heading>
+              <Heading fit caps>and join our Slack!</Heading>
+              <Heading style="margin: 1em">❤️</Heading>
+              <div style={{paddingTop: "1em"}}>
+                <Link href="https://twitter.com/seattlejs">
+                  <Code textColor="white">https://twitter.com/@seattlejs</Code>
+                </Link>                
+              </div>
+            </Slide>
+
+            <Slide bgColor="secondary">
+              <Heading fit caps>Social Hour</Heading>
+              <Heading fit caps>at No Anchor</Heading>
+              <div style={{paddingTop: "1em"}}>
+                <Link href="https://www.google.com/maps/dir/Code+Fellows,+3rd+Avenue,+Seattle,+WA/No+Anchor,+2505+2nd+Ave+%23105,+Seattle,+WA+98121/@47.6168673,-122.3509326,17.98z/data=!4m14!4m13!1m5!1m1!1s0x5490153758c88a61:0xe3d3fd29c55db518!2m2!1d-122.3518713!2d47.6182477!1m5!1m1!1s0x5490154e65dc0d3f:0xfb76d452add58dfe!2m2!1d-122.348433!2d47.615292!3e2">
+                  <Code textColor="white">2505 2nd Ave</Code>
+                </Link>                
+              </div>
+            </Slide>
+
           </Deck>
         );
       }

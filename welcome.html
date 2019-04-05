@@ -1,20 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width initial-scale=1 user-scalable=no" />
-    <title>SeattleJS February Meetup</title>
-    <link href="https://fonts.googleapis.com/css?family=Lobster+Two:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet" type="text/css">
-    <link href="https://unpkg.com/normalize.css@7/normalize.css" rel="stylesheet" type="text/css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width initial-scale=1 user-scalable=no"
+    />
+    <title>SeattleJS April Meetup</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster+Two:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://unpkg.com/normalize.css@7/normalize.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <style>
-      a, a:link, a:focus, a:visited, a:active, a:hover  {
+      a,
+      a:link,
+      a:focus,
+      a:visited,
+      a:active,
+      a:hover {
         text-decoration: none;
         color: #000;
       }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div id="root"></div>
     <script src="https://unpkg.com/prop-types@15/prop-types.js"></script>
     <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
@@ -44,25 +64,21 @@
                 SeattleJS
               </Heading>
               <Heading fit caps style="margin-top: 1em" >
-                February Meetup
+                April Meetup
               </Heading>
-              <Text textAlign="left" textColor="tertiary">Bathroom codes: "Womens" 8025* | "Mens" 8125*</Text>
-              <Text textAlign="left" textColor="tertiary">WiFi: CodeFellows | learnmorefaster</Text>
+
               <Heading fit caps style="margin-top: 4em">
                 <Image
-                  src="https://images.ctfassets.net/qjy3jg1udcmq/1MN5F84EVi0SaAieSkqY6S/46d632aa1811432f9c0a92600a1a5ee6/cf-logo-horizontal-2-color-white.png"
-                  alt="Code Fellows"
+                style="margin-top: -3em"
+                  src="https://rawcdn.githack.com/seattlejs/slides/master/images/QS-logo-dark-bkgd.png"
+                  alt="Amazon QuickSight"
                   width={"50%"}  />
-                <Image
-                  style="margin-top: -4em"
-                  src={"https://rawcdn.githack.com/seanode/welcome/master/images/formidable-white.svg"}
-                  width={"50%"}
-                  alt="Formidable" />
+
               </Heading>
               <footer style={{paddingTop: "1em"}}>
                 <Link href="https://twitter.com/seattlejs">
                   <Code textColor="white">@seattlejs</Code>
-                </Link>                
+                </Link>
               </footer>
             </Slide>
 
@@ -71,47 +87,13 @@
                 A Big Thank You
               </Heading>
               <Heading fit caps >
-                to our host sponsor
+                to our host
               </Heading>
-              <Image src="https://images.ctfassets.net/qjy3jg1udcmq/1MN5F84EVi0SaAieSkqY6S/46d632aa1811432f9c0a92600a1a5ee6/cf-logo-horizontal-2-color-white.png" alt="Code Fellows" width={"100%"}  />
-              <Link href="https://twitter.com/codefellows">
-                <Code textColor="lightGray">@codefellows</Code>
+              <Image src="https://rawcdn.githack.com/seattlejs/slides/master/images/QS-logo-dark-bkgd.png"
+              alt="Amazon QuickSight" width={"100%"}  />
+              <Link href="https://aws.amazon.com/quicksight/">
+                <Code textColor="lightGray">@awscloud</Code>
               </Link>
-            </Slide>
-
-            <Slide bgColor="secondary">
-              <Heading fit caps >Learn to code.</Heading>
-              <Heading fit lineHeight={2}>
-                <Link href="https://www.codefellows.org/how-to-apply/">
-                  <Code textColor="white">www.codefellows.org</Code>
-                </Link>
-              </Heading>
-            </Slide>
-
-            <Slide bgColor="secondary">
-              <Heading fit caps >
-                Thank You to our
-              </Heading>
-              <Heading fit caps >
-                food &amp; drink sponsor
-              </Heading>
-              <Image
-                style="margin: -4em 0"
-                src={"https://rawcdn.githack.com/seanode/welcome/master/images/formidable-white.svg"}
-                width={"100%"}
-                alt="Formidable" />
-              <Link href="https://twitter.com/formidablelabs">
-                <Code textColor="lightGray">@formidablelabs</Code>
-              </Link>
-            </Slide>
-            
-            <Slide bgColor="secondary">
-              <Heading fit caps >Formidable is hiring.</Heading>
-              <Heading fit lineHeight={2}>
-                <Link href="https://formidable.com/careers/">
-                  <Code textColor="white">formidable.com/careers</Code>
-                </Link>
-              </Heading>
             </Slide>
 
             <Slide bgColor="secondary">
@@ -126,7 +108,7 @@
               <footer style={{paddingTop: "1em"}}>
                 <Link href="https://twitter.com/seattlejs">
                   <Code textColor="white">@seattlejs</Code>
-                </Link>                
+                </Link>
               </footer>
             </Slide>
 
@@ -156,10 +138,24 @@
               <footer style={{paddingTop: "1em"}}>
                 <Link href="https://twitter.com/seattlejs">
                   <Text textColor="tertiary"><Code textColor="white">Slack: pinned tweet twitter.com/seattlejs</Code></Text>
-                </Link>                
+                </Link>
               </footer>
             </Slide>
-            
+
+            <Slide bgColor="secondary">
+              <Heading fit caps>Your meetup needs you!</Heading>
+              <hr />
+              <Image
+              src={"https://rawcdn.githack.com/seattlejs/seattlejs/master/images/issue-templates.png"}
+              width={"100%"}
+              alt="Issue Templates" />
+              <footer style={{paddingTop: "1em"}}>
+                <Link href="https://twitter.com/seattlejs">
+                  <Text textColor="tertiary"><Code textColor="white">Slack: pinned tweet twitter.com/seattlejs</Code></Text>
+                </Link>
+              </footer>
+            </Slide>
+
 
             <Slide bgColor="secondary">
               <Heading fit caps>
@@ -168,58 +164,58 @@
               <footer style={{paddingTop: "1em"}}>
                 <Link href="https://twitter.com/seattlejs">
                   <Code textColor="white">@seattlejs</Code>
-                </Link>                
+                </Link>
               </footer>
             </Slide>
 
             <Slide bgColor="secondary">
               <Heading fit caps>
-                Amber Hoak
+                Hannah Ingham
               </Heading>
               <Heading fit caps >
-                Designing Data-Driven
-              </Heading>
-              <Heading fit caps >
-              Visualizations using D3.js
+                GraphQL is swell
               </Heading>
               <Text textColor="lightGray">
-                <Code textColor="lightGray">@ahoak</Code>
+                <Code textColor="lightGray">@HannahCIngham1</Code>
               </Text>
             </Slide>
 
             <Slide bgColor="secondary">
               <Heading fit caps>
-                Kim Brandl & Doug Mahugh
+                Chris Griffing
               </Heading>
               <Heading fit caps >
-                Extend Office 365 with
+                Dredd is the
               </Heading>
               <Heading fit caps >
-                the Office JavaScript APIs
+                API Law
               </Heading>
               <Text textColor="lightGray">
-                <Code textColor="lightGray">@dmahugh</Code> |
-                <Code textColor="lightGray">@kbrandl22</Code>
+                <Code textColor="lightGray">https://github.com/cmgriffing</Code>
+              </Text>
+            </Slide>
+
+
+            <Slide bgColor="secondary">
+              <Heading fit caps>
+                Becca Leee
+              </Heading>
+              <Heading fit caps >
+                My First npm Package
+              </Heading>
+              <Text textColor="lightGray">
+                <Code textColor="lightGray">@the_becca_lee</Code>
               </Text>
             </Slide>
 
             <Slide bgColor="secondary">
               <Heading fit caps >
-                Sponsors ❤
+                Sponsor ❤
               </Heading>
-              <Image
-                 style="margin-top: 2em"
-                src="https://images.ctfassets.net/qjy3jg1udcmq/1MN5F84EVi0SaAieSkqY6S/46d632aa1811432f9c0a92600a1a5ee6/cf-logo-horizontal-2-color-white.png" alt="Code Fellows" width={"100%"}  />
-              <Link href="https://twitter.com/codefellows">
-                <Code textColor="lightGray">@codefellows</Code>
-              </Link>
-              <Image
-                style="margin: -4em 0"
-                src={"https://rawcdn.githack.com/seanode/welcome/master/images/formidable-white.svg"}
-                width={"100%"}
-                alt="Formidable" />
-              <Link href="https://twitter.com/formidablelabs">
-                <Code textColor="lightGray">@formidablelabs</Code>
+              <Image src="https://rawcdn.githack.com/seattlejs/slides/master/images/QS-logo-dark-bkgd.png"
+              alt="Amazon QuickSight" width={"100%"}  />
+              <Link href="https://aws.amazon.com/quicksight/">
+                <Code textColor="lightGray">@awscloud</Code>
               </Link>
             </Slide>
 
@@ -230,7 +226,7 @@
               <div style={{marginTop: "-1em"}}>
                 <Link href="https://twitter.com/seattlejs">
                   <Code textColor="white">twitter.com/seattlejs</Code>
-                </Link>                
+                </Link>
               </div>
             </Slide>
 

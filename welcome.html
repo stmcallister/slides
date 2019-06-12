@@ -32,6 +32,14 @@
         text-decoration: none;
         color: #000;
       }
+
+      .flex-row {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+      }
     </style>
   </head>
   <body>
@@ -64,8 +72,15 @@
                 SeattleJS
               </Heading>
               <Heading fit caps style="margin-top: 1em" >
-                May Meetup
+                June Meetup
               </Heading>
+              <div className="flex-row"> 
+                  <Image src={"images/galvanize-logo.png"}
+                alt="Galvanize logo" width={"50%"} style={{marginTop: "-5%"}} />
+                <Image src={"images/formidable-white.svg"}
+                alt="Formidable logo" width={"50%"} style={{marginTop: "-5%"}} />
+              </div>
+             
 
               <footer style={{paddingTop: "1em"}}>
                 <Link href="https://twitter.com/seattlejs">
@@ -81,9 +96,19 @@
               <Heading fit caps >
                 to our host
               </Heading>
-              <Image src={"https://rawcdn.githack.com/seattlejs/slides/master/images/Mercedes-symbol.jpg"}
-              alt="Mercedes logo" width={"50%"} style={{marginTop: "-5%"}} />
-              <Code textColor="white">#MBRDNA</Code>
+                <Image src={"images/galvanize-logo.png"}
+                alt="Galvanize logo" width={"150%"} style={{marginTop: "-5%"}} />
+            </Slide>
+
+            <Slide bgColor="secondary">
+              <Heading fit caps >
+                A Big Thank You
+              </Heading>
+              <Heading fit caps >
+                to our sponsor
+              </Heading>
+              <Image src={"images/formidable-white.svg"}
+                alt="Formidable logo" width={"150%"} style={{marginTop: "-5%"}} />
             </Slide>
 
             <Slide bgColor="secondary">
@@ -125,7 +150,7 @@
               <Heading fit caps>Your meetup needs you!</Heading>
               <hr />
               <Image
-              src={"https://rawcdn.githack.com/seattlejs/seattlejs/master/images/issue-templates.png"}
+              src={"images/issue-templates.png"}
               width={"100%"}
               alt="Issue Templates" />
               <footer style={{paddingTop: "1em"}}>
@@ -134,11 +159,31 @@
                 </Link>
               </footer>
             </Slide>
-            
+
             <Slide>
-              <Heading fit caps>Mentor Chat</Heading>
-              <Heading fit caps>May 23rd 7-8:30pm</Heading>
+              <Heading fit caps>W3C</Heading>
+              <Heading fit >WebXR | WebGPU | Streaming</Heading>
+              <Heading fit caps style={{marginTop: "1em"}}>June 26th 6-8pm | Location Announced Soon</Heading>
+
+              <footer style={{paddingTop: "1em"}}>
+                <Link href="https://twitter.com/seattlejs">
+                  <Code textColor="white">@seattlejs</Code>
+                </Link>
+              </footer>
             </Slide>
+            <Slide>
+            <Heading fit style={{marginTop: "-10%"}} >
+              Mentorship Chat
+              </Heading> 
+            <Heading fit caps>June 27th 7-9pm</Heading>
+            <Heading fit >#mentorship channel on SeattleJS Slack</Heading>
+              <footer style={{paddingTop: "1em"}}>
+                <Link href="https://twitter.com/seattlejs">
+                  <Code textColor="white">@seattlejs</Code>
+                </Link>
+              </footer>
+            </Slide>
+            
 
             <Slide bgColor="secondary">
               <Heading fit caps>
@@ -150,6 +195,21 @@
                 </Link>
               </footer>
             </Slide>
+
+            <Slide bgColor="secondary">
+            <Heading fit style={{marginTop: "-10%"}} >
+              CascadiaJS
+              </Heading>
+              <Image src={"images/cascadiajs.jpg"}
+                alt="Photo of speaker at CascadiaJS" width={"80%"}  />
+              <footer >
+                <Link href="https://2019.cascadiajs.com/cfp">
+                  <Code textColor="white">https://2019.cascadiajs.com/cfp</Code>
+                </Link>
+              </footer>
+            </Slide>
+
+
 
             <Slide bgColor="secondary">
               <Heading fit caps>
@@ -164,51 +224,43 @@
 
             <Slide bgColor="secondary">
               <Heading fit caps>
-                Puneet Priyadarshi
+              Will Farley
              </Heading>
               <Heading fit caps >
-                Service Worker Internals:
+              Vending Customer Experiences: 
               </Heading>
-              <Heading fit caps>The good, the bad and the Ugly</Heading>
+              <Heading fit caps>Autonomy for the Frontend </Heading>
               <Text textColor="lightGray">
-                <Code textColor="lightGray">@this__puneet</Code>
+                <Code textColor="lightGray">@aWillFarley</Code>
               </Text>
             </Slide>
 
             <Slide bgColor="secondary">
               <Heading fit caps>
-                Dylan Babbs
+              Grant Timmerman
               </Heading>
               <Heading fit caps >
-                Interactive Isolines with
+              Go Serverless with
               </Heading>
               <Heading fit caps >
-                React, Leaflet, and HERE Location Services
+              Google Cloud Functions
               </Heading>
               <Text textColor="lightGray">
-                <Code textColor="lightGray">@dbabbs</Code>
+                <Code textColor="lightGray">@granttimmerman</Code>
               </Text>
             </Slide>
 
-
-            <Slide bgColor="secondary">
-              <Heading fit caps>
-                David Laird
-              </Heading>
-              <Heading fit caps >
-                EmberJS Octane
-              </Heading>
-              <Text textColor="lightGray">
-                <Code textColor="lightGray">@kiwiupover</Code>
-              </Text>
-            </Slide>
 
             <Slide bgColor="secondary">
               <Heading fit caps >
                 Sponsor ❤
               </Heading>
-              <Image src={"https://rawcdn.githack.com/seattlejs/slides/master/images/Mercedes-symbol.jpg"}
-              alt="Mercedes logo" width={"50%"} style={{marginTop: "-5%"}} />
+              <div className="flex-row"> 
+                  <Image src={"images/galvanize-logo.png"}
+                alt="Galvanize logo" width={"50%"} style={{marginTop: "-5%"}} />
+                <Image src={"images/formidable-white.svg"}
+                alt="Formidable logo" width={"50%"} style={{marginTop: "-5%"}} />
+              </div>
             </Slide>
 
             <Slide bgColor="secondary">

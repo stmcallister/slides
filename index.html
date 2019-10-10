@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width initial-scale=1 user-scalable=no"
     />
-    <title>SeattleJS September Meetup</title>
+    <title>SeattleJS October Meetup</title>
     <link
       href="https://fonts.googleapis.com/css?family=Lobster+Two:400,700"
       rel="stylesheet"
@@ -21,7 +21,7 @@
       href="https://unpkg.com/normalize.css@7/normalize.css"
       rel="stylesheet"
       type="text/css"
-    /> 
+    />
     <style>
       a,
       a:link,
@@ -67,38 +67,35 @@
             transition={["slide"]}
             transitionDuration={500}
           >
-            <Slide bgColor="secondary">
-              <Heading fit caps>
+            <Slide bgColor="white">
+              <Heading fit caps textColor="black" >
                 SeattleJS
               </Heading>
-              <Heading fit caps style="margin-top: 1em" >
-                September Meetup
+              <Heading fit caps style="margin-top: 1em" textColor="black" >
+                October Meetup
               </Heading>
               <div className="flex-row">
-                  <Image src={"images/xealth_logo_small.png"}
-                alt="Xealth logo" width={"25%"} style={{marginTop: "-5%"}} />
+                  <Image src={"images/ookla.png"}
+                alt="Xealth logo" width={"50%"}  />
               </div>
 
 
               <footer style={{paddingTop: "1em"}}>
                 <Link href="https://twitter.com/seattlejs">
-                  <Code textColor="white">WIFI: XealthEvent Password: SeattleJS</Code>
+                  <Code textColor="black">@SeattleJS</Code>
                 </Link>
               </footer>
             </Slide>
 
-            <Slide bgColor="secondary">
-              <Heading fit caps >
+            <Slide bgColor="white">
+              <Heading fit caps textColor="black" >
                 A Big Thank You
               </Heading>
-              <Heading fit caps >
+              <Heading fit caps textColor="black" >
                 to our host
               </Heading>
-              <Heading fit caps >
-                Xealth, inc.
-              </Heading>
-              <Heading fit>Sundar Balasubramanian</Heading>
-              <Heading fit>Chief Product Officer and Co-Founder</Heading>
+                <Image src={"images/ookla.png"}
+              alt="Xealth logo" width={"60%"}  />
             </Slide>
 
             <Slide bgColor="secondary">
@@ -149,7 +146,7 @@
                 </Link>
               </footer>
             </Slide>
-            
+
             <Slide>
               <Heading fit style={{marginTop: "-15%"}} >
                 SeattleJS Hackers
@@ -163,24 +160,23 @@
                 </footer>
               </Slide>
 
-            <Slide>
-              <Heading fit style={{marginTop: "-15%"}} >
-                Mentorship Chat
-                </Heading>
-              <Heading fit caps style={{marginTop: "5%"}}>September 21st 7-9pm</Heading>
-              <Heading fit >#mentorship channel on SeattleJS Slack</Heading>
-                <footer style={{paddingTop: "1em"}}>
-                  <Link href="https://twitter.com/seattlejs">
-                    <Code textColor="white">@seattlejs</Code>
-                  </Link>
-                </footer>
-              </Slide>
+              <Slide>
+                 <Heading caps fit>Hackt🎃berfest</Heading>
+                <Heading fit  style={{marginTop: "5%"}}>October 23rd @ Flatiron</Heading>
+                <Heading fit  style={{marginTop: "5%"}}>More Details Coming Soon</Heading>
+                  <footer style={{paddingTop: "1em"}}>
+                    <Link href="https://twitter.com/seattlejs">
+                      <Code textColor="white">@seattlejs</Code>
+                    </Link>
+                  </footer>
+                </Slide>
 
             <Slide>
-              <Heading fit caps>TSConf Diversity</Heading>
-              <Heading fit caps>Scholarship</Heading>
-              <Heading  >Deadline extended!</Heading>
-              <Heading fit caps style={{marginTop: "1em"}}>Next Thursday (9/19/2019)</Heading>
+              <Heading fit caps>Congratulations</Heading>
+              <Heading fit >Kate Pond</Heading>
+              <Heading fit caps>TSConf Diversity Scholarship Recipient</Heading>
+              <Heading fit >Colin Gray</Heading>
+              <Heading fit style={{paddingTop: ".5em"}}>React Day Berlin Ticket Giveaway Winner</Heading>
 
               <footer style={{paddingTop: "1em"}}>
                 <Link href="https://twitter.com/seattlejs">
@@ -189,10 +185,8 @@
               </footer>
             </Slide>
 
-            <Slide>
-              <Heading fit caps>React Day Berlin</Heading>
-              <Heading fit caps>Ticket Giveaway</Heading>
-              <Heading fit caps style={{marginTop: "1em"}}>Deadline: Thursday, 9/26/2019</Heading>
+            <Slide bgColor="secondary">
+              <Heading fit caps>Community Minute</Heading>
 
               <footer style={{paddingTop: "1em"}}>
                 <Link href="https://twitter.com/seattlejs">
@@ -214,53 +208,38 @@
             </Slide>
 
             <Slide bgColor="secondary">
-              <Heading fit caps>
-              Jason Kim
-             </Heading>
+              <Heading fit caps>Allan Zheng</Heading>
+              <Heading fit caps>Ajwinder Singh</Heading>
               <Heading fit caps >
-                "Big Data"
+                Make your applications faster
               </Heading>
-              <Heading fit caps style={{marginTop: "2%"}}>Engineering With Node.js</Heading>
-              <Text textColor="lightGray">
-                <Code textColor="lightGray">@jasoki</Code>
-              </Text>
+              <Heading fit caps style={{marginTop: "2%"}}>by using AWS JavaScript SDK v3</Heading>
             </Slide>
 
             <Slide bgColor="secondary">
               <Heading fit caps>
-                Evan Tahler
+                Trivikram Kamat
               </Heading>
               <Heading fit caps >
-                Using Next.JS & Github
+                HTTP/3: Node.js
+              </Heading>
+              <Heading fit caps >
+                can do QUIC
               </Heading>
               <br/>
-              <Heading fit caps >
-                to build static sites
-              </Heading>
               <Text textColor="lightGray">
-                <Code textColor="lightGray">@evantahler</Code>
+                <Code textColor="lightGray">@trivikram</Code>
               </Text>
             </Slide>
 
-            <Slide bgColor="secondary">
-              <Heading fit caps>
-                Jason Nutter
-              </Heading>
-              <Heading fit caps >
-                Browser Crypto APIs
-              </Heading>
-              <Text textColor="lightGray">
-                <Code textColor="lightGray">@jasonnutter</Code>
-              </Text>
-            </Slide>
 
-            <Slide bgColor="secondary">
-              <Heading fit caps >
+            <Slide bgColor="white">
+              <Heading fit caps style={{color: "black"}}>
                 Sponsor ❤
               </Heading>
               <div className="flex-row">
-                  <Image src={"images/xealth_logo_small.png"}
-                alt="Xealth logo" width={"25%"} style={{marginTop: "-5%"}} />
+                  <Image src={"images/ookla.png"}
+                alt="Xealth logo" width={"55%"} style={{marginTop: "1em"}} />
               </div>
             </Slide>
 
@@ -278,7 +257,7 @@
             <Slide bgColor="secondary">
               <Heading fit caps>Thanks For Coming!</Heading>
               <Heading fit caps>Social Hour</Heading>
-              <Heading fit caps>Flat Stick Pub</Heading>
+              <Heading fit caps>Elephant & Castle</Heading>
             </Slide>
           </Deck>
         );

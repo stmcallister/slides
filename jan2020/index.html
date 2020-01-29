@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width initial-scale=1 user-scalable=no"
+    />
+    <title>BellevueJS January Meetup</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster+Two:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://unpkg.com/normalize.css@7/normalize.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      a,
+      a:link,
+      a:focus,
+      a:visited,
+      a:active,
+      a:hover {
+        text-decoration: none;
+        color: #000;
+      }
+
+      .flex-row {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/prop-types@15/prop-types.js"></script>
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.js"></script>
+    <script src="https://unpkg.com/spectacle@^4/dist/spectacle.js"></script>
+    <script src="https://unpkg.com/spectacle@^4/lib/one-page.js"></script>
+    <script src="https://unpkg.com/victory@^0.25/dist/victory.js"></script>
+    <script type="text/spectacle">
+      () => {
+        // Customize the default theme.
+        const { themes: { defaultTheme } } = Spectacle;
+        const theme = defaultTheme({
+          primary: "#c43a31"
+        });
+
+        // The presentation!
+        return (
+          <Deck
+            theme={theme}
+            progress={"none"}
+            transition={["slide"]}
+            transitionDuration={500}
+          >
+          <Slide bgColor="secondary">
+            <Heading fit caps>
+                BellevueJS
+              </Heading>
+              <Heading fit caps style="margin-top: 1em" >
+                January Meetup
+              </Heading>
+              <div className="flex-row">
+                  <Image src={"../images/Microsoft-Logo-White.png"}
+                alt="Microsoft logo"  />
+              </div>
+
+
+              <footer style={{paddingTop: "1em"}}>
+                <Link href="https://twitter.com/bellevue_js">
+                  <Code textColor="white">@Bellevue_JS</Code>
+                </Link>
+              </footer>
+            </Slide>
+
+            <Slide bgColor="secondary">
+              <Image src={"../images/reactor-slide.png"}
+              alt="Microsoft Reactor logo"  />
+            </Slide>            
+            <Slide bgColor="secondary">
+              <Heading fit caps>
+                Thank You
+              </Heading>
+              <Heading fit caps>
+                to our food sponsor
+              </Heading>
+              <Image src={"../images/PagerDuty-Green.png"}
+              alt="PagerDuty logo"  />
+            </Slide>
+
+            <Slide bgColor="secondary">
+              <Heading fit caps>BellevueJS</Heading>
+              <Heading fit caps>Is Your Meetup</Heading>
+            </Slide>
+
+            <Slide bgColor="secondary">
+              <Heading fit caps>Your meetup needs you!</Heading>
+              <hr />
+              <Appear fid="2">
+                <Heading size={1} caps >
+                  Speakers
+                </Heading>
+              </Appear>
+              <Appear fid="3">
+                <Heading size={1} caps textColor="tertiary">
+                  Hosts & Sponsors
+                </Heading>
+              </Appear>
+              <Appear fid="4">
+                <Heading size={1} caps textColor="tertiary">
+                  Community
+                </Heading>
+              </Appear>
+            </Slide>
+
+            <Slide bgColor="secondary">
+              <Heading fit caps>
+                Talks
+              </Heading>
+              <footer style={{paddingTop: "1em"}}>
+                <Link href="https://twitter.com/bellevue_js">
+                  <Code textColor="white">@bellevue_js</Code>
+                </Link>
+              </footer>
+            </Slide>
+            <Slide bgColor="secondary">
+
+            </Slide>
+            <Slide bgColor="secondary">
+              <Heading fit caps>Justin Lee</Heading>
+              <Heading fit caps >
+                Introduction to
+              </Heading>
+              <Heading fit caps>
+                Code Katas
+              </Heading>
+            </Slide>
+
+            <Slide bgColor="secondary">
+              <Heading fit caps>Community Minute</Heading>
+
+              <footer style={{paddingTop: "1em"}}>
+                <Link href="https://twitter.com/bellevue_js">
+                  <Code textColor="white">@bellevue_js</Code>
+                </Link>
+              </footer>
+            </Slide>
+            
+            <Slide bgColor="secondary">
+              <Heading fit caps>Brian Gershon</Heading>
+              <Heading fit caps >
+                Choose Your Own Adventure with
+              </Heading>
+              <Heading fit caps>
+                Eleventy
+              </Heading>
+            </Slide>
+
+            <Slide bgColor="secondary">
+              <Heading fit caps>Follow us</Heading>
+              <Heading style="margin: 1em">❤️</Heading>
+              <div style={{marginTop: "-1em"}}>
+                <Link href="https://twitter.com/bellevue_js">
+                  <Code textColor="white">twitter.com/bellevue_js</Code>
+                </Link>
+              </div>
+            </Slide>
+
+            <Slide bgColor="secondary">
+              <Heading fit caps>Thanks For Coming!</Heading>
+            </Slide>
+          </Deck>
+        );
+      }
+    </script>
+  </body>
+</html>
